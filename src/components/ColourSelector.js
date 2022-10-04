@@ -7,6 +7,6 @@ const ColourSelector = (props) => {
     <button className={config.classname} onClick={() => selectNextBackground({background: background})}>
       {config.label}
     </button>
-  );
-};
+  )
+}
 export default ColourSelector;

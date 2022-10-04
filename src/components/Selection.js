@@ -1,15 +1,15 @@
 
-import React, {useState} from "react";
 
-export default function Selection(props){
-    let [style, setStyle] = useState({background: ""});
+import React, { useState } from "react";
 
-    let applyColor = props.applyColor;
+export default function Selection(props) {
+  let [style, setStyle] = useState({ background: "" });
 
-    return(
-        <div className="fix-box" onClick={()=> applyColor(setStyle)} 
-            style={{style}}>
-        <h2 className="subheading">Selection</h2>
-        </div>
-    )
+  let applyColor = props.applyColor;
+
+  return (
+    <div className="fix-box" onClick={() => applyColor(setStyle)} style={style}>
+      <h2 className="subheading">Selection</h2>
+    </div>
+  );
 }
